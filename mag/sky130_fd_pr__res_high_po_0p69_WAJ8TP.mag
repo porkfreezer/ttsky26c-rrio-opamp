@@ -1,0 +1,110 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1785885411
+<< pwell >>
+rect -586 -1192 586 1192
+<< psubdiff >>
+rect -550 1122 -454 1156
+rect 454 1122 550 1156
+rect -550 1060 -516 1122
+rect 516 1060 550 1122
+rect -550 -1122 -516 -1060
+rect 516 -1122 550 -1060
+rect -550 -1156 -454 -1122
+rect 454 -1156 550 -1122
+<< psubdiffcont >>
+rect -454 1122 454 1156
+rect -550 -1060 -516 1060
+rect 516 -1060 550 1060
+rect -454 -1156 454 -1122
+<< xpolycontact >>
+rect -420 594 -282 1026
+rect -420 -1026 -282 -594
+rect -186 594 -48 1026
+rect -186 -1026 -48 -594
+rect 48 594 186 1026
+rect 48 -1026 186 -594
+rect 282 594 420 1026
+rect 282 -1026 420 -594
+<< ppolyres >>
+rect -420 -594 -282 594
+rect -186 -594 -48 594
+rect 48 -594 186 594
+rect 282 -594 420 594
+<< locali >>
+rect -550 1122 -454 1156
+rect 454 1122 550 1156
+rect -550 1060 -516 1122
+rect 516 1060 550 1122
+rect -550 -1122 -516 -1060
+rect 516 -1122 550 -1060
+rect -550 -1156 -454 -1122
+rect 454 -1156 550 -1122
+<< viali >>
+rect -404 611 -298 1008
+rect -170 611 -64 1008
+rect 64 611 170 1008
+rect 298 611 404 1008
+rect -404 -1008 -298 -611
+rect -170 -1008 -64 -611
+rect 64 -1008 170 -611
+rect 298 -1008 404 -611
+<< metal1 >>
+rect -410 1008 -292 1020
+rect -410 611 -404 1008
+rect -298 611 -292 1008
+rect -410 599 -292 611
+rect -176 1008 -58 1020
+rect -176 611 -170 1008
+rect -64 611 -58 1008
+rect -176 599 -58 611
+rect 58 1008 176 1020
+rect 58 611 64 1008
+rect 170 611 176 1008
+rect 58 599 176 611
+rect 292 1008 410 1020
+rect 292 611 298 1008
+rect 404 611 410 1008
+rect 292 599 410 611
+rect -410 -611 -292 -599
+rect -410 -1008 -404 -611
+rect -298 -1008 -292 -611
+rect -410 -1020 -292 -1008
+rect -176 -611 -58 -599
+rect -176 -1008 -170 -611
+rect -64 -1008 -58 -611
+rect -176 -1020 -58 -1008
+rect 58 -611 176 -599
+rect 58 -1008 64 -611
+rect 170 -1008 176 -611
+rect 58 -1020 176 -1008
+rect 292 -611 410 -599
+rect 292 -1008 298 -611
+rect 404 -1008 410 -611
+rect 292 -1020 410 -1008
+<< labels >>
+rlabel psubdiffcont 0 -1139 0 -1139 0 B
+port 10 nsew
+rlabel xpolycontact -351 991 -351 991 0 R1_0
+port 11 nsew
+rlabel xpolycontact -351 -991 -351 -991 0 R2_0
+port 12 nsew
+rlabel xpolycontact -117 991 -117 991 0 R1_1
+port 13 nsew
+rlabel xpolycontact -117 -991 -117 -991 0 R2_1
+port 14 nsew
+rlabel xpolycontact 117 991 117 991 0 R1_2
+port 15 nsew
+rlabel xpolycontact 117 -991 117 -991 0 R2_2
+port 16 nsew
+rlabel xpolycontact 351 991 351 991 0 R1_3
+port 17 nsew
+rlabel xpolycontact 351 -991 351 -991 0 R2_3
+port 18 nsew
+<< properties >>
+string FIXED_BBOX -533 -1139 533 1139
+string gencell sky130_fd_pr__res_high_po_0p69
+string library sky130
+string parameters w 0.69 l 6.1 m 1 nx 4 wmin 0.690 lmin 0.50 class resistor rho 319.8 val 3.391k dummy 0 dw 0.0 term 194.82 sterm 0.0 caplen 0 guard 1 glc 1 grc 1 gtc 1 gbc 1 compatible {sky130_fd_pr__res_high_po_0p35  sky130_fd_pr__res_high_po_0p69 sky130_fd_pr__res_high_po_1p41  sky130_fd_pr__res_high_po_2p85 sky130_fd_pr__res_high_po_5p73} snake 0 full_metal 1 wmax 0.690 n_guard 0 hv_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
+<< end >>

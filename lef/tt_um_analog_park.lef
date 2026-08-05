@@ -6,13 +6,13 @@ MACRO tt_um_analog_park
   CLASS BLOCK ;
   FOREIGN tt_um_analog_park ;
   ORIGIN 0.000 0.000 ;
-  SIZE 145.360 BY 225.760 ;
+  SIZE 161.000 BY 225.760 ;
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 128.190 224.760 128.490 225.760 ;
+        RECT 143.830 224.760 144.130 225.760 ;
     END
   END clk
   PIN ena
@@ -20,7 +20,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 130.950 224.760 131.250 225.760 ;
+        RECT 146.590 224.760 146.890 225.760 ;
     END
   END ena
   PIN rst_n
@@ -28,32 +28,34 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 125.430 224.760 125.730 225.760 ;
+        RECT 141.070 224.760 141.370 225.760 ;
     END
   END rst_n
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 1.160000 ;
     PORT
       LAYER met4 ;
-        RECT 136.170 0.000 137.070 1.000 ;
-        RECT 97.700 -0.010 98.600 0.000 ;
+        RECT 151.810 0.000 152.710 1.000 ;
     END
   END ua[0]
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 3.880000 ;
     PORT
       LAYER met4 ;
-        RECT 116.850 0.000 117.750 1.000 ;
+        RECT 132.490 0.000 133.390 1.000 ;
     END
   END ua[1]
   PIN ua[2]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 3.300000 ;
     PORT
       LAYER met4 ;
-        RECT 97.530 0.000 98.430 1.000 ;
+        RECT 113.170 0.000 114.070 1.000 ;
     END
   END ua[2]
   PIN ua[3]
@@ -61,7 +63,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 78.210 0.000 79.110 1.000 ;
+        RECT 93.850 0.000 94.750 1.000 ;
     END
   END ua[3]
   PIN ua[4]
@@ -69,7 +71,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 58.890 0.000 59.790 1.000 ;
+        RECT 74.530 0.000 75.430 1.000 ;
     END
   END ua[4]
   PIN ua[5]
@@ -77,7 +79,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 39.570 0.000 40.470 1.000 ;
+        RECT 55.210 0.000 56.110 1.000 ;
     END
   END ua[5]
   PIN ua[6]
@@ -85,7 +87,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 20.250 0.000 21.150 1.000 ;
+        RECT 35.890 0.000 36.790 1.000 ;
     END
   END ua[6]
   PIN ua[7]
@@ -93,15 +95,17 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 0.930 0.000 1.830 1.000 ;
+        RECT 16.570 0.000 17.470 1.000 ;
     END
   END ua[7]
   PIN ui_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.138000 ;
+    ANTENNADIFFAREA 0.429000 ;
     PORT
       LAYER met4 ;
-        RECT 122.670 224.760 122.970 225.760 ;
+        RECT 138.310 224.760 138.610 225.760 ;
     END
   END ui_in[0]
   PIN ui_in[1]
@@ -109,7 +113,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 119.910 224.760 120.210 225.760 ;
+        RECT 135.550 224.760 135.850 225.760 ;
     END
   END ui_in[1]
   PIN ui_in[2]
@@ -117,7 +121,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 117.150 224.760 117.450 225.760 ;
+        RECT 132.790 224.760 133.090 225.760 ;
     END
   END ui_in[2]
   PIN ui_in[3]
@@ -125,7 +129,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 114.390 224.760 114.690 225.760 ;
+        RECT 130.030 224.760 130.330 225.760 ;
     END
   END ui_in[3]
   PIN ui_in[4]
@@ -133,7 +137,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 111.630 224.760 111.930 225.760 ;
+        RECT 127.270 224.760 127.570 225.760 ;
     END
   END ui_in[4]
   PIN ui_in[5]
@@ -141,7 +145,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 108.870 224.760 109.170 225.760 ;
+        RECT 124.510 224.760 124.810 225.760 ;
     END
   END ui_in[5]
   PIN ui_in[6]
@@ -149,7 +153,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 106.110 224.760 106.410 225.760 ;
+        RECT 121.750 224.760 122.050 225.760 ;
     END
   END ui_in[6]
   PIN ui_in[7]
@@ -157,7 +161,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 103.350 224.760 103.650 225.760 ;
+        RECT 118.990 224.760 119.290 225.760 ;
     END
   END ui_in[7]
   PIN uio_in[0]
@@ -165,7 +169,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 100.590 224.760 100.890 225.760 ;
+        RECT 116.230 224.760 116.530 225.760 ;
     END
   END uio_in[0]
   PIN uio_in[1]
@@ -173,7 +177,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 97.830 224.760 98.130 225.760 ;
+        RECT 113.470 224.760 113.770 225.760 ;
     END
   END uio_in[1]
   PIN uio_in[2]
@@ -181,7 +185,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 95.070 224.760 95.370 225.760 ;
+        RECT 110.710 224.760 111.010 225.760 ;
     END
   END uio_in[2]
   PIN uio_in[3]
@@ -189,7 +193,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 92.310 224.760 92.610 225.760 ;
+        RECT 107.950 224.760 108.250 225.760 ;
     END
   END uio_in[3]
   PIN uio_in[4]
@@ -197,7 +201,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 89.550 224.760 89.850 225.760 ;
+        RECT 105.190 224.760 105.490 225.760 ;
     END
   END uio_in[4]
   PIN uio_in[5]
@@ -205,7 +209,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 86.790 224.760 87.090 225.760 ;
+        RECT 102.430 224.760 102.730 225.760 ;
     END
   END uio_in[5]
   PIN uio_in[6]
@@ -213,7 +217,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 84.030 224.760 84.330 225.760 ;
+        RECT 99.670 224.760 99.970 225.760 ;
     END
   END uio_in[6]
   PIN uio_in[7]
@@ -221,7 +225,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 81.270 224.760 81.570 225.760 ;
+        RECT 96.910 224.760 97.210 225.760 ;
     END
   END uio_in[7]
   PIN uio_oe[0]
@@ -229,7 +233,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 34.350 224.760 34.650 225.760 ;
+        RECT 49.990 224.760 50.290 225.760 ;
     END
   END uio_oe[0]
   PIN uio_oe[1]
@@ -237,7 +241,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 31.590 224.760 31.890 225.760 ;
+        RECT 47.230 224.760 47.530 225.760 ;
     END
   END uio_oe[1]
   PIN uio_oe[2]
@@ -245,7 +249,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 28.830 224.760 29.130 225.760 ;
+        RECT 44.470 224.760 44.770 225.760 ;
     END
   END uio_oe[2]
   PIN uio_oe[3]
@@ -253,7 +257,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 26.070 224.760 26.370 225.760 ;
+        RECT 41.710 224.760 42.010 225.760 ;
     END
   END uio_oe[3]
   PIN uio_oe[4]
@@ -261,7 +265,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 23.310 224.760 23.610 225.760 ;
+        RECT 38.950 224.760 39.250 225.760 ;
     END
   END uio_oe[4]
   PIN uio_oe[5]
@@ -269,7 +273,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 20.550 224.760 20.850 225.760 ;
+        RECT 36.190 224.760 36.490 225.760 ;
     END
   END uio_oe[5]
   PIN uio_oe[6]
@@ -277,7 +281,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 17.790 224.760 18.090 225.760 ;
+        RECT 33.430 224.760 33.730 225.760 ;
     END
   END uio_oe[6]
   PIN uio_oe[7]
@@ -285,7 +289,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 15.030 224.760 15.330 225.760 ;
+        RECT 30.670 224.760 30.970 225.760 ;
     END
   END uio_oe[7]
   PIN uio_out[0]
@@ -293,7 +297,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 56.430 224.760 56.730 225.760 ;
+        RECT 72.070 224.760 72.370 225.760 ;
     END
   END uio_out[0]
   PIN uio_out[1]
@@ -301,7 +305,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 53.670 224.760 53.970 225.760 ;
+        RECT 69.310 224.760 69.610 225.760 ;
     END
   END uio_out[1]
   PIN uio_out[2]
@@ -309,7 +313,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 50.910 224.760 51.210 225.760 ;
+        RECT 66.550 224.760 66.850 225.760 ;
     END
   END uio_out[2]
   PIN uio_out[3]
@@ -317,7 +321,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 48.150 224.760 48.450 225.760 ;
+        RECT 63.790 224.760 64.090 225.760 ;
     END
   END uio_out[3]
   PIN uio_out[4]
@@ -325,7 +329,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 45.390 224.760 45.690 225.760 ;
+        RECT 61.030 224.760 61.330 225.760 ;
     END
   END uio_out[4]
   PIN uio_out[5]
@@ -333,7 +337,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 42.630 224.760 42.930 225.760 ;
+        RECT 58.270 224.760 58.570 225.760 ;
     END
   END uio_out[5]
   PIN uio_out[6]
@@ -341,7 +345,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 39.870 224.760 40.170 225.760 ;
+        RECT 55.510 224.760 55.810 225.760 ;
     END
   END uio_out[6]
   PIN uio_out[7]
@@ -349,7 +353,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 37.110 224.760 37.410 225.760 ;
+        RECT 52.750 224.760 53.050 225.760 ;
     END
   END uio_out[7]
   PIN uo_out[0]
@@ -357,7 +361,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 78.510 224.760 78.810 225.760 ;
+        RECT 94.150 224.760 94.450 225.760 ;
     END
   END uo_out[0]
   PIN uo_out[1]
@@ -365,7 +369,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 75.750 224.760 76.050 225.760 ;
+        RECT 91.390 224.760 91.690 225.760 ;
     END
   END uo_out[1]
   PIN uo_out[2]
@@ -373,7 +377,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 72.990 224.760 73.290 225.760 ;
+        RECT 88.630 224.760 88.930 225.760 ;
     END
   END uo_out[2]
   PIN uo_out[3]
@@ -381,7 +385,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 70.230 224.760 70.530 225.760 ;
+        RECT 85.870 224.760 86.170 225.760 ;
     END
   END uo_out[3]
   PIN uo_out[4]
@@ -389,7 +393,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 67.470 224.760 67.770 225.760 ;
+        RECT 83.110 224.760 83.410 225.760 ;
     END
   END uo_out[4]
   PIN uo_out[5]
@@ -397,7 +401,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 64.710 224.760 65.010 225.760 ;
+        RECT 80.350 224.760 80.650 225.760 ;
     END
   END uo_out[5]
   PIN uo_out[6]
@@ -405,7 +409,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 61.950 224.760 62.250 225.760 ;
+        RECT 77.590 224.760 77.890 225.760 ;
     END
   END uo_out[6]
   PIN uo_out[7]
@@ -413,7 +417,7 @@ MACRO tt_um_analog_park
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 59.190 224.760 59.490 225.760 ;
+        RECT 74.830 224.760 75.130 225.760 ;
     END
   END uo_out[7]
   PIN VDPWR
@@ -432,54 +436,74 @@ MACRO tt_um_analog_park
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
-  PIN VAPWR
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 7.000 5.000 9.000 220.760 ;
-    END
-  END VAPWR
   OBS
+      LAYER nwell ;
+        RECT 117.565 2.695 154.025 22.575 ;
       LAYER li1 ;
-        RECT 99.150 5.780 123.500 6.680 ;
-        RECT 119.190 3.250 120.090 5.780 ;
+        RECT 117.745 2.875 153.905 22.395 ;
       LAYER met1 ;
-        RECT 99.120 6.650 100.080 6.680 ;
-        RECT 99.090 5.750 100.110 6.650 ;
-        RECT 99.120 5.720 100.080 5.750 ;
-        RECT 119.160 4.150 120.060 4.210 ;
-        RECT 122.600 4.170 123.500 6.710 ;
-        RECT 126.650 6.020 130.100 6.920 ;
-        RECT 126.650 4.170 127.550 6.020 ;
-        RECT 116.990 3.250 120.060 4.150 ;
-        RECT 122.580 3.270 127.550 4.170 ;
-        RECT 119.160 3.190 120.060 3.250 ;
+        RECT 114.890 2.690 154.320 25.860 ;
       LAYER met2 ;
-        RECT 99.090 5.750 100.110 6.650 ;
-        RECT 99.120 5.705 100.080 5.750 ;
-        RECT 129.170 4.330 130.070 6.950 ;
-        RECT 129.170 4.305 134.830 4.330 ;
-        RECT 117.020 4.150 117.920 4.180 ;
-        RECT 116.975 3.250 117.920 4.150 ;
-        RECT 129.170 3.455 134.850 4.305 ;
-        RECT 129.170 3.430 134.830 3.455 ;
-        RECT 117.020 3.220 117.920 3.250 ;
+        RECT 116.180 2.660 154.350 25.885 ;
       LAYER met3 ;
-        RECT 99.095 5.725 100.105 6.625 ;
-        RECT 99.150 3.340 100.050 5.725 ;
-        RECT 133.930 4.325 137.070 4.330 ;
-        RECT 116.960 3.190 117.930 4.210 ;
-        RECT 133.930 3.435 137.095 4.325 ;
-        RECT 133.930 3.430 137.070 3.435 ;
+        RECT 1.140 2.600 154.355 26.920 ;
       LAYER met4 ;
-        RECT 97.700 3.365 100.055 4.265 ;
-        RECT 97.700 1.000 98.600 3.365 ;
-        RECT 116.990 3.220 117.900 4.180 ;
-        RECT 116.995 1.000 117.895 3.220 ;
-        RECT 136.170 1.000 137.070 4.330 ;
-        RECT 98.430 0.000 98.600 1.000 ;
-        RECT 117.750 0.010 117.895 1.000 ;
+        RECT 6.000 224.360 30.270 224.760 ;
+        RECT 31.370 224.360 33.030 224.760 ;
+        RECT 34.130 224.360 35.790 224.760 ;
+        RECT 36.890 224.360 38.550 224.760 ;
+        RECT 39.650 224.360 41.310 224.760 ;
+        RECT 42.410 224.360 44.070 224.760 ;
+        RECT 45.170 224.360 46.830 224.760 ;
+        RECT 47.930 224.360 49.590 224.760 ;
+        RECT 50.690 224.360 52.350 224.760 ;
+        RECT 53.450 224.360 55.110 224.760 ;
+        RECT 56.210 224.360 57.870 224.760 ;
+        RECT 58.970 224.360 60.630 224.760 ;
+        RECT 61.730 224.360 63.390 224.760 ;
+        RECT 64.490 224.360 66.150 224.760 ;
+        RECT 67.250 224.360 68.910 224.760 ;
+        RECT 70.010 224.360 71.670 224.760 ;
+        RECT 72.770 224.360 74.430 224.760 ;
+        RECT 75.530 224.360 77.190 224.760 ;
+        RECT 78.290 224.360 79.950 224.760 ;
+        RECT 81.050 224.360 82.710 224.760 ;
+        RECT 83.810 224.360 85.470 224.760 ;
+        RECT 86.570 224.360 88.230 224.760 ;
+        RECT 89.330 224.360 90.990 224.760 ;
+        RECT 92.090 224.360 93.750 224.760 ;
+        RECT 94.850 224.360 96.510 224.760 ;
+        RECT 97.610 224.360 99.270 224.760 ;
+        RECT 100.370 224.360 102.030 224.760 ;
+        RECT 103.130 224.360 104.790 224.760 ;
+        RECT 105.890 224.360 107.550 224.760 ;
+        RECT 108.650 224.360 110.310 224.760 ;
+        RECT 111.410 224.360 113.070 224.760 ;
+        RECT 114.170 224.360 115.830 224.760 ;
+        RECT 116.930 224.360 118.590 224.760 ;
+        RECT 119.690 224.360 121.350 224.760 ;
+        RECT 122.450 224.360 124.110 224.760 ;
+        RECT 125.210 224.360 126.870 224.760 ;
+        RECT 127.970 224.360 129.630 224.760 ;
+        RECT 130.730 224.360 132.390 224.760 ;
+        RECT 133.490 224.360 135.150 224.760 ;
+        RECT 136.250 224.360 137.910 224.760 ;
+        RECT 139.010 224.360 140.670 224.760 ;
+        RECT 141.770 224.360 143.430 224.760 ;
+        RECT 144.530 224.360 146.190 224.760 ;
+        RECT 147.290 224.360 154.355 224.760 ;
+        RECT 6.000 221.160 154.355 224.360 ;
+        RECT 6.400 4.600 154.355 221.160 ;
+        RECT 6.000 1.400 154.355 4.600 ;
+        RECT 6.000 1.000 16.170 1.400 ;
+        RECT 17.870 1.000 35.490 1.400 ;
+        RECT 37.190 1.000 54.810 1.400 ;
+        RECT 56.510 1.000 74.130 1.400 ;
+        RECT 75.830 1.000 93.450 1.400 ;
+        RECT 95.150 1.000 112.770 1.400 ;
+        RECT 114.470 1.000 132.090 1.400 ;
+        RECT 133.790 1.000 151.410 1.400 ;
+        RECT 153.110 1.000 154.355 1.400 ;
   END
 END tt_um_analog_park
 END LIBRARY
