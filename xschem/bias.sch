@@ -61,18 +61,18 @@ N 530 -470 530 -455 {lab=#net2}
 N 250 -410 250 -315 {lab=inm}
 N 700 -410 700 -310 {lab=inp}
 N 80 -440 390 -440 {lab=out}
-N -100 -340 -100 -310 {lab=#net3}
+N -100 -340 -100 -310 {lab=startup}
 N 80 -570 250 -570 {lab=VDPWR}
-N -150 -460 -140 -460 {lab=#net3}
-N -150 -420 -100 -420 {lab=#net3}
+N -150 -460 -140 -460 {lab=startup}
+N -150 -420 -100 -420 {lab=startup}
 N -100 -150 250 -150 {lab=VGND}
 N 390 -150 530 -150 {lab=VGND}
 N -270 -150 -150 -150 {lab=VGND}
 N 80 -570 80 -520 {lab=VDPWR}
 N 120 -490 170 -490 {lab=EN}
 N -60 -280 80 -280 {lab=inm}
-N -100 -340 40 -340 {lab=#net3}
-N -150 -340 -100 -340 {lab=#net3}
+N -100 -340 40 -340 {lab=startup}
+N -150 -340 -100 -340 {lab=startup}
 N 670 80 670 120 {lab=VGND}
 N 630 120 670 120 {lab=VGND}
 N 670 -100 670 -40 {lab=VGND}
@@ -82,7 +82,7 @@ N 980 -570 980 -540 {lab=VDPWR}
 N 880 -570 980 -570 {lab=VDPWR}
 N -240 -190 -190 -190 {lab=nEN}
 N 0 -50 30 -50 {lab=nEN}
-N -150 -340 -150 -220 {lab=#net3}
+N -150 -340 -150 -220 {lab=startup}
 N -150 -160 -150 -150 {lab=VGND}
 N -140 -50 -80 -50 {lab=EN}
 N 880 -230 920 -230 {lab=pIout}
@@ -90,19 +90,20 @@ N 80 -460 80 -440 {lab=out}
 N -100 -570 80 -570 {lab=VDPWR}
 N 80 -440 80 -370 {lab=out}
 N 80 -310 80 -280 {lab=inm}
-N -150 -460 -150 -420 {lab=#net3}
-N -100 -430 -100 -420 {lab=#net3}
+N -150 -460 -150 -420 {lab=startup}
+N -100 -430 -100 -420 {lab=startup}
 N -200 -530 -140 -530 {lab=nEN}
-N -100 -500 -100 -490 {lab=#net4}
+N -100 -500 -100 -490 {lab=#net3}
 N -100 -570 -100 -560 {lab=VDPWR}
 N -270 -570 -100 -570 {lab=VDPWR}
 N 1030 -500 1030 -390 {lab=out}
-N 820 -390 1030 -390 {lab=out}
 N 1070 -570 1070 -540 {lab=VDPWR}
 N 980 -570 1070 -570 {lab=VDPWR}
-N -100 -420 -100 -340 {lab=#net3}
+N -100 -420 -100 -340 {lab=startup}
 N 530 -455 530 -300 {lab=#net2}
 N 390 -440 390 -300 {lab=out}
+N 1030 -390 1060 -390 {lab=out}
+N 820 -390 1030 -390 {lab=out}
 C {sky130_fd_pr/pfet3_01v8_lvt.sym} 270 -440 0 1 {name=M4
 W=2
 L=2
@@ -225,7 +226,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {lab_wire.sym} 970 -390 0 1 {name=p9 sig_type=std_logic lab=out}
 C {sky130_fd_pr/nfet3_01v8.sym} -80 -280 0 1 {name=M3
 W=0.5
 L=0.5
@@ -376,3 +376,5 @@ C {ipin.sym} -140 -50 0 0 {name=p11 lab=EN
 C {opin.sym} 920 -230 0 0 {name=p1 lab=pIout}
 C {ipin.sym} -270 -150 0 0 {name=p2 lab=VGND}
 C {ipin.sym} -270 -570 0 0 {name=p12 lab=VDPWR}
+C {lab_wire.sym} 20 -340 0 0 {name=p6 sig_type=std_logic lab=startup}
+C {opin.sym} 1060 -390 0 0 {name=p13 lab=vbias}
