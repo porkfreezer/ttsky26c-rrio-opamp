@@ -5,39 +5,83 @@ V {}
 S {}
 F {}
 E {}
-N -90 -240 10 -240 {lab=inm}
-N -340 -280 -340 -260 {lab=inp}
-N 290 -170 290 -160 {lab=#net1}
+N -130 -30 -130 -10 {lab=#net1}
 N -170 -280 -160 -280 {lab=inp}
-N 330 -180 330 -160 {lab=#net1}
-N 290 -240 290 -230 {lab=#net2}
-N 70 -240 290 -240 {lab=#net2}
+N 290 -240 290 -230 {lab=od}
 N -340 -280 -170 -280 {lab=inp}
-N -90 -280 -90 -240 {lab=inm}
 N 430 -340 430 -300 {lab=od}
 N 400 -340 430 -340 {lab=od}
-N 210 -350 210 -340 {lab=od}
-N 210 -350 400 -350 {lab=od}
 N 400 -350 400 -340 {lab=od}
 N -170 -300 -90 -300 {lab=inp}
 N -170 -300 -170 -280 {lab=inp}
-N -220 -410 -220 -340 {lab=#net3}
-N -220 -340 -90 -340 {lab=#net3}
-N -290 -410 -290 -390 {lab=#net3}
-N -290 -410 -220 -410 {lab=#net3}
-N 330 -180 390 -180 {lab=#net1}
+N -220 -410 -220 -340 {lab=#net2}
+N -220 -340 -90 -340 {lab=#net2}
+N -290 -410 -290 -390 {lab=#net2}
 N 330 -220 350 -220 {lab=od}
-N 330 -160 350 -160 {lab=#net1}
-N 290 -160 330 -160 {lab=#net1}
-N 350 -340 350 -220 {lab=od}
+N 350 -230 350 -220 {lab=od}
 N 350 -340 400 -340 {lab=od}
-C {code.sym} -570 -55 0 0 {name=sim only_toplevel=true only_toplevel=true value="
-.options savecurrents
+N 290 -230 350 -230 {lab=od}
+N 350 -340 350 -230 {lab=od}
+N 190 -410 310 -410 {lab=#net2}
+N 510 -520 530 -520 {lab=0}
+N 510 -540 580 -540 {lab=od}
+N 560 -350 580 -350 {lab=od}
+N 310 -350 400 -350 {lab=od}
+N 210 -440 210 -340 {lab=#net3}
+N 510 -560 560 -560 {lab=#net4}
+N 190 -600 210 -600 {lab=#net2}
+N 190 -630 560 -630 {lab=#net2}
+N 560 -630 560 -580 {lab=#net2}
+N 510 -580 560 -580 {lab=#net2}
+N 190 -600 190 -410 {lab=#net2}
+N -220 -410 190 -410 {lab=#net2}
+N 190 -630 190 -600 {lab=#net2}
+N 620 -600 620 -590 {lab=#net5}
+N 210 -440 350 -440 {lab=#net3}
+N 410 -440 560 -440 {lab=#net4}
+N 560 -350 560 -340 {lab=od}
+N 400 -350 560 -350 {lab=od}
+N 550 -600 620 -600 {lab=#net5}
+N 560 -560 560 -440 {lab=#net4}
+N 580 -540 580 -350 {lab=od}
+N 290 -230 290 -120 {lab=od}
+N -340 -240 -320 -240 {lab=0}
+N -340 -90 -320 -90 {lab=0}
+N -340 -130 -210 -130 {lab=inm}
+N -210 -260 -210 -130 {lab=inm}
+N -210 -260 -100 -260 {lab=inm}
+N -100 -280 -100 -260 {lab=inm}
+N -100 -280 -90 -280 {lab=inm}
+N -340 -150 -310 -150 {lab=#net2}
+N -310 -300 -310 -150 {lab=#net2}
+N -290 -410 -220 -410 {lab=#net2}
+N -340 -300 -310 -300 {lab=#net2}
+N -310 -410 -310 -300 {lab=#net2}
+N -660 -320 -640 -320 {lab=#net2}
+N -660 -320 -660 -170 {lab=#net2}
+N -660 -170 -640 -170 {lab=#net2}
+N -660 -410 -660 -320 {lab=#net2}
+N -310 -410 -290 -410 {lab=#net2}
+N -660 -410 -310 -410 {lab=#net2}
+N -340 -170 -330 -170 {lab=#net5}
+N -330 -320 -330 -170 {lab=#net5}
+N -340 -320 -330 -320 {lab=#net5}
+N -340 -670 -340 -320 {lab=#net5}
+N -340 -670 550 -670 {lab=#net5}
+N 550 -670 550 -600 {lab=#net5}
+N 510 -600 550 -600 {lab=#net5}
+N -340 -260 -270 -260 {lab=#net1}
+N -270 -260 -270 -30 {lab=#net1}
+N -270 -30 -130 -30 {lab=#net1}
+N -340 -110 -160 -110 {lab=od}
+N -160 -120 -160 -110 {lab=od}
+N -160 -120 290 -120 {lab=od}
+C {code.sym} -560 -45 0 0 {name=sim only_toplevel=true only_toplevel=true value="
+.options savecurrent
 .save all
-.param vdd=1.8 vo=0.9 fac=1
-.param rtrim=2k rtrim2=2.3k
+.param vdd=1.8
 
-.param cm1_l=8 cd_l=10 cd_m=1
+.param cm1_l=6 cd_l=10 cd_m=1
 
 .param pcas_w=0.42 pcas_l=1
 .param ncas_w=0.42 ncas_l=2
@@ -46,9 +90,9 @@ C {code.sym} -570 -55 0 0 {name=sim only_toplevel=true only_toplevel=true value=
 .param nic_nf=1 nic_l=0.5 nic_w=2
 .param pic_nf=1 pic_l=0.5 pic_w=2
 
-.param nip_m=8 np_l=1 np_w=8.4 np_nf=2 np_m=2
-.param pip_m=8 pp_l=0.5 pp_w=24 pp_nf=6 pp_m=2
-.param pip2_m=1 pp2_l=0.5 pp2_w=3.1 pp2_nf=1 pp2_m=2
+.param nip_m=8 np_l=2 np_w=10 np_nf=4 np_m=2
+.param pip_m=8 pp_l=0.8 pp_w=48 pp_nf=8 pp_m=2
+.param pip2_m=1 pp2_l=0.8 pp2_w=6 pp2_nf=1 pp2_m=2
 .param mtr_m=4
 .param nm1_l=0.5 nm1_w=1 nm1_nf=1
 .param nm2_l=0.5 nm2_w=1 nm2_nf=1
@@ -58,25 +102,25 @@ C {code.sym} -570 -55 0 0 {name=sim only_toplevel=true only_toplevel=true value=
 .param pfb_l=0.5 pfb_w=2 pfb_nf=1 pfb_m=2
 .param nfb_l=0.5 nfb_w=1 nfb_nf=1 nfb_m=2
 .param npb_l=0.5 npb_w=4 npb_nf=2 npb_m=2
-.param mm=8 mmc=1
+.param mm=4 mmc=4
 
 .param io_m=2
 .param pio_l=0.35 pio_w=2.5 pio_nf=1
-.param no_l=0.35 no_w=9 no_nf=3 no_m=1
-.param nob_w=0.45 nob_nf=1
+.param no_l=0.35 no_w=32 no_nf=8 no_m=1
+.param nob_w=1.6 nob_nf=1
 .param nof_l=0.35 nof_w=0.8 nof_nf=1 nof_m=1
 .param nofb_l=0.35 nofb_w=0.8 nofb_nf=1
-.param po_l=0.35 po_w=60 po_nf=10 po_m=1
-.param pob_w=3 pob_nf=1
+.param po_l=0.35 po_w=96 po_nf=12 po_m=1
+.param pob_w=4.8 pob_nf=1
 .param pof_l=0.35 pof_w=5.6 pof_nf=2 pof_m=1
 .param pofb_l=0.35 pofb_w=5.6 pofb_nf=2
 .param poi_l=0.5 poi_w=1.5 poi_nf=1 s2_m=2
 
-.param r=1e8 c=10p
-.param c_m=200 rc_l=1 c2_m=13 rc2_l=20
+.param rl=1e8 rh=1e8 c=10p
+.param c_l=20 rc_l=1 c2_l=10 rc2_l=10
 
 .control
-let n = 37
+let n = 16
 let vcm = vector(n)
 let gm_n = cvector(n)
 let gm_p = cvector(n)
@@ -85,7 +129,7 @@ let outv = cvector(n)
 let outvcm = cvector(n)
 *let vos = vector(n)
 let i = 0
-*while i < n
+while i < n
 * let this_vcm = i*1.8/(n-1)
 * let vcm[i] = this_vcm
 * alter v1 dc=$&this_vcm
@@ -100,16 +144,18 @@ let i = 0
 *plot inp-inm
 *plot -20*log10(mag(deriv(inp-inm))+1-e9)
 
-ac dec 10 10 1e9
-let gain = db(od)
-let phase = cph(od)*180/pi+180
-meas ac bw find frequency when gain=0
-meas ac pm find phase when gain=0
-plot db(od) max(-20, cph(od)*180/pi+180) title 'BW=$&bw,PM=$&pm'
-* reset
-* let i = i+1
-*end
-*plot dc1.inm-dc1.inp dc2.inm-dc2.inp dc3.inm-dc3.inp dc4.inm-dc4.inp dc5.inm-dc5.inp dc6.inm-dc6.inp dc7.inm-dc7.inp dc8.inm-dc8.inp dc9.inm-dc9.inp dc10.inm-dc10.inp dc11.inm-dc11.inp dc12.inm-dc12.inp dc13.inm-dc13.inp dc14.inm-dc14.inp dc15.inm-dc15.inp dc16.inm-dc16.inp
+*ac dec 10 10 1e9
+*let gain = db(od)
+*let phase = cph(od)*180/pi+180
+*meas ac bw find frequency when gain=0
+*meas ac pm find phase when gain=0
+*plot db(od) max(-20, cph(od)*180/pi+180) title 'BW=$&bw,PM=$&pm'
+tran 1n 4u
+plot od
+ reset
+ let i = i+1
+end
+plot dc1.inm-dc1.inp dc2.inm-dc2.inp dc3.inm-dc3.inp dc4.inm-dc4.inp dc5.inm-dc5.inp dc6.inm-dc6.inp dc7.inm-dc7.inp dc8.inm-dc8.inp dc9.inm-dc9.inp dc10.inm-dc10.inp dc11.inm-dc11.inp dc12.inm-dc12.inp dc13.inm-dc13.inp dc14.inm-dc14.inp dc15.inm-dc15.inp dc16.inm-dc16.inp
 *plot vos vs vcm
 *let gm = gm_n+gm_p
 *plot mag(gm) mag(gm_n) mag(gm_p) vs vcm
@@ -118,41 +164,24 @@ plot db(od) max(-20, cph(od)*180/pi+180) title 'BW=$&bw,PM=$&pm'
 .endc
 "}
 C {code_shown.sym} -1410 -390 0 0 {name=s1 only_toplevel=false value="tcleval(
-.lib $::SKYWATER_MODELS/../ngspice/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/../ngspice/sky130.lib.spice tt_mm
 .include $::SKYWATER_MODELS/../../libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 )"}
 C {launcher.sym} -505 160 0 0 {name=h1
 descr=simulate
 tclcommand="xschem save; xschem netlist; xschem simulate"}
-C {vsource.sym} -340 -230 0 0 {name=V1 value="0.9 AC 1" savecurrent=false}
-C {capa-2.sym} -90 -210 0 0 {name=C1
-m=1
-value=1e8
-footprint=1206
-device=polarized_capacitor}
-C {ind.sym} 40 -240 1 0 {name=L1
-m=1
-value=1e8
-footprint=1206
-device=inductor}
-C {gnd.sym} -340 -200 0 0 {name=l3 lab=0}
+C {vsource.sym} -130 20 0 0 {name=V1 value="pulse(0.3 1.5 0 1n 1n 1u 2u) AC 1" savecurrent=false}
+C {gnd.sym} -130 50 0 0 {name=l3 lab=0}
 C {vsource.sym} -290 -360 0 0 {name=V2 value=\{vdd\} savecurrent=false}
 C {gnd.sym} -290 -330 0 0 {name=l4 lab=0
 value="1.8"}
-C {gnd.sym} -90 -180 0 0 {name=l5 lab=0
-value="1.8"}
-C {lab_wire.sym} -70 -240 0 1 {name=p3 sig_type=std_logic lab=inm}
 C {lab_wire.sym} -220 -280 0 1 {name=p4 sig_type=std_logic lab=inp}
-C {vcvs_limit.sym} 290 -200 0 1 {name=alimit1 gain=1000 lower_limit=-1 upper_limit=1}
-C {vsource.sym} 290 -130 0 0 {name=V3 value=\{vo\} savecurrent=false}
-C {gnd.sym} 290 -100 0 0 {name=l2 lab=0
-value="1.8"}
-C {res.sym} 460 -150 0 0 {name=R1
-value=\{r\}
+C {res.sym} 350 -190 0 0 {name=R1
+value=\{rl\}
 footprint=1206
 device=resistor
 m=1}
-C {gnd.sym} 460 -120 0 0 {name=l6 lab=0
+C {gnd.sym} 350 -160 0 0 {name=l6 lab=0
 value="1.8"}
 C {capa-2.sym} 430 -270 0 0 {name=C3
 m=1
@@ -165,3 +194,23 @@ C {/foss/designs/ttsky26c-analog-park/xschem/opamp_testing2.sym} 60 -310 0 0 {na
 C {gnd.sym} -90 -320 1 0 {name=l21 lab=0
 value="1.8"}
 C {lab_wire.sym} 380 -350 0 0 {name=p7 sig_type=std_logic lab=od}
+C {res.sym} 310 -380 0 0 {name=R2
+value=\{rh\}
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} -90 -60 0 0 {name=l1 lab=0}
+C {/foss/designs/tt-multiplexer/asw/sky130/tt_asw_3v3/xschem/tt_asw_3v3.sym} 360 -560 0 0 {name=x2}
+C {gnd.sym} 530 -520 0 0 {name=l5 lab=0
+value="1.8"}
+C {vsource.sym} 620 -560 0 0 {name=V3 value=3.3 savecurrent=false}
+C {gnd.sym} 620 -530 0 0 {name=l7 lab=0
+value="1.8"}
+C {ammeter.sym} 380 -440 3 0 {name=Vmeas savecurrent=true spice_ignore=0}
+C {/foss/designs/tt-multiplexer/asw/sky130/tt_asw_3v3/xschem/tt_asw_3v3.sym} -490 -280 0 0 {name=x3}
+C {gnd.sym} -320 -240 0 0 {name=l8 lab=0
+value="1.8"}
+C {/foss/designs/tt-multiplexer/asw/sky130/tt_asw_3v3/xschem/tt_asw_3v3.sym} -490 -130 0 0 {name=x4}
+C {gnd.sym} -320 -90 0 0 {name=l10 lab=0
+value="1.8"}
+C {lab_wire.sym} -200 -260 0 1 {name=p1 sig_type=std_logic lab=inm}
