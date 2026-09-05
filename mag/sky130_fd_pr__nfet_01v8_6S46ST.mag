@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1788305629
+timestamp 1788621970
 << nmos >>
 rect -1261 -231 -1061 169
 rect -1003 -231 -803 169
@@ -73,7 +73,7 @@ rect 1273 -219 1307 157
 << poly >>
 rect -1261 241 -1061 257
 rect -1261 207 -1245 241
-rect -1143 207 -1061 241
+rect -1077 207 -1061 241
 rect -1261 169 -1061 207
 rect -1003 241 -803 257
 rect -1003 207 -987 241
@@ -108,7 +108,7 @@ rect 803 207 819 241
 rect 987 207 1003 241
 rect 803 169 1003 207
 rect 1061 241 1261 257
-rect 1061 207 1143 241
+rect 1061 207 1077 241
 rect 1245 207 1261 241
 rect 1061 169 1261 207
 rect -1261 -257 -1061 -231
@@ -122,7 +122,7 @@ rect 545 -257 745 -231
 rect 803 -257 1003 -231
 rect 1061 -257 1261 -231
 << polycont >>
-rect -1245 207 -1143 241
+rect -1245 207 -1077 241
 rect -987 207 -819 241
 rect -729 207 -561 241
 rect -471 207 -303 241
@@ -131,10 +131,10 @@ rect 45 207 213 241
 rect 303 207 471 241
 rect 561 207 729 241
 rect 819 207 987 241
-rect 1143 207 1245 241
+rect 1077 207 1245 241
 << locali >>
 rect -1261 207 -1245 241
-rect -1143 207 -1121 241
+rect -1077 207 -1061 241
 rect -1003 207 -987 241
 rect -819 207 -803 241
 rect -745 207 -729 241
@@ -151,7 +151,7 @@ rect 545 207 561 241
 rect 729 207 745 241
 rect 803 207 819 241
 rect 987 207 1003 241
-rect 1127 207 1143 241
+rect 1061 207 1077 241
 rect 1245 207 1261 241
 rect -1307 157 -1273 173
 rect -1307 -235 -1273 -219
@@ -176,7 +176,7 @@ rect 1015 -235 1049 -219
 rect 1273 157 1307 173
 rect 1273 -235 1307 -219
 << viali >>
-rect -1245 207 -1143 241
+rect -1245 207 -1077 241
 rect -987 207 -819 241
 rect -729 207 -561 241
 rect -471 207 -303 241
@@ -185,23 +185,23 @@ rect 45 207 213 241
 rect 303 207 471 241
 rect 561 207 729 241
 rect 819 207 987 241
-rect 1143 207 1245 241
-rect -1307 -219 -1273 157
-rect -1049 -219 -1015 157
-rect -791 -219 -757 157
-rect -533 -219 -499 157
-rect -275 -219 -241 157
-rect -17 -219 17 157
-rect 241 -219 275 157
-rect 499 -219 533 157
-rect 757 -219 791 157
-rect 1015 -219 1049 157
-rect 1273 -219 1307 157
+rect 1077 207 1245 241
+rect -1307 -202 -1273 99
+rect -1049 -202 -1015 99
+rect -791 -202 -757 99
+rect -533 -202 -499 99
+rect -275 -202 -241 99
+rect -17 -202 17 99
+rect 241 -202 275 99
+rect 499 -202 533 99
+rect 757 -202 791 99
+rect 1015 -202 1049 99
+rect 1273 -202 1307 99
 << metal1 >>
-rect -1257 241 -1121 247
+rect -1257 241 -1065 247
 rect -1257 207 -1245 241
-rect -1143 207 -1121 241
-rect -1257 201 -1121 207
+rect -1077 207 -1065 241
+rect -1257 201 -1065 207
 rect -999 241 -807 247
 rect -999 207 -987 241
 rect -819 207 -807 241
@@ -234,54 +234,54 @@ rect 807 241 999 247
 rect 807 207 819 241
 rect 987 207 999 241
 rect 807 201 999 207
-rect 1127 241 1257 247
-rect 1127 207 1143 241
+rect 1065 241 1257 247
+rect 1065 207 1077 241
 rect 1245 207 1257 241
-rect 1127 201 1257 207
-rect -1313 157 -1267 169
-rect -1313 -219 -1307 157
-rect -1273 -219 -1267 157
-rect -1313 -231 -1267 -219
-rect -1055 157 -1009 169
-rect -1055 -219 -1049 157
-rect -1015 -219 -1009 157
-rect -1055 -231 -1009 -219
-rect -797 157 -751 169
-rect -797 -219 -791 157
-rect -757 -219 -751 157
-rect -797 -231 -751 -219
-rect -539 157 -493 169
-rect -539 -219 -533 157
-rect -499 -219 -493 157
-rect -539 -231 -493 -219
-rect -281 157 -235 169
-rect -281 -219 -275 157
-rect -241 -219 -235 157
-rect -281 -231 -235 -219
-rect -23 157 23 169
-rect -23 -219 -17 157
-rect 17 -219 23 157
-rect -23 -231 23 -219
-rect 235 157 281 169
-rect 235 -219 241 157
-rect 275 -219 281 157
-rect 235 -231 281 -219
-rect 493 157 539 169
-rect 493 -219 499 157
-rect 533 -219 539 157
-rect 493 -231 539 -219
-rect 751 157 797 169
-rect 751 -219 757 157
-rect 791 -219 797 157
-rect 751 -231 797 -219
-rect 1009 157 1055 169
-rect 1009 -219 1015 157
-rect 1049 -219 1055 157
-rect 1009 -231 1055 -219
-rect 1267 157 1313 169
-rect 1267 -219 1273 157
-rect 1307 -219 1313 157
-rect 1267 -231 1313 -219
+rect 1065 201 1257 207
+rect -1313 99 -1267 111
+rect -1313 -202 -1307 99
+rect -1273 -202 -1267 99
+rect -1313 -214 -1267 -202
+rect -1055 99 -1009 111
+rect -1055 -202 -1049 99
+rect -1015 -202 -1009 99
+rect -1055 -214 -1009 -202
+rect -797 99 -751 111
+rect -797 -202 -791 99
+rect -757 -202 -751 99
+rect -797 -214 -751 -202
+rect -539 99 -493 111
+rect -539 -202 -533 99
+rect -499 -202 -493 99
+rect -539 -214 -493 -202
+rect -281 99 -235 111
+rect -281 -202 -275 99
+rect -241 -202 -235 99
+rect -281 -214 -235 -202
+rect -23 99 23 111
+rect -23 -202 -17 99
+rect 17 -202 23 99
+rect -23 -214 23 -202
+rect 235 99 281 111
+rect 235 -202 241 99
+rect 275 -202 281 99
+rect 235 -214 281 -202
+rect 493 99 539 111
+rect 493 -202 499 99
+rect 533 -202 539 99
+rect 493 -214 539 -202
+rect 751 99 797 111
+rect 751 -202 757 99
+rect 791 -202 797 99
+rect 751 -214 797 -202
+rect 1009 99 1055 111
+rect 1009 -202 1015 99
+rect 1049 -202 1055 99
+rect 1009 -214 1055 -202
+rect 1267 99 1313 111
+rect 1267 -202 1273 99
+rect 1307 -202 1313 99
+rect 1267 -214 1313 -202
 << labels >>
 rlabel ndiffc -1290 -31 -1290 -31 0 D0
 port 1 nsew
@@ -326,5 +326,5 @@ port 20 nsew
 << properties >>
 string gencell sky130_fd_pr__nfet_01v8
 string library sky130
-string parameters w 2.0 l 1.0 m 1 nf 10 diffcov 100 polycov 100 guard 0 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 conn_gates 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
+string parameters w 2.0 l 1.0 m 1 nf 10 diffcov 100 polycov 100 guard 0 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 conn_gates 0 viasrc +80 viadrn +80 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
 << end >>
